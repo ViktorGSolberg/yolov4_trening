@@ -3,8 +3,8 @@
 ## Mappestruktur som er verdt å beholde for reprodusering av trening
 
 ### data
-Mappen ```data``` inneholder de originale bildene, utdelt av dere.
-I ```data/sentif/raw``` finner vi de originale bildene og annoteringene i ```images``` og ```annotations```, henholdsvis.
+* Mappen ```data``` inneholder de originale bildene, utdelt av dere.
+* I ```data/sentif/raw``` finner vi de originale bildene og annoteringene i ```images``` og ```annotations```, henholdsvis.
 
 ## Mapper og filer som er nødvendige for integrering i software
 
