@@ -25,6 +25,22 @@
 ### darknet_opencv
 Den siste mappen som er relevant er darknet_opencv. Denne inneholder såpass mange filer at den får et eget delkapittel.
 
+#### darknet_setup
+
+#### darknet_test_recordings
+
+#### darknet_train 
+
+#### detect
+
+#### results
+
+#### results_ikkevurdert
+
+#### map_calc
+
+#### darknet
+
 
 
  
