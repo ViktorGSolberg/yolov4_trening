@@ -1,1 +1,7 @@
+# Trening av YOLOv4
+
+
+
+
+
 
