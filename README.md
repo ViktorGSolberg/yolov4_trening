@@ -38,6 +38,7 @@ Flytter treningsdataer inn i riktige steder i ```darknet```mappen, lager de rikt
 Brukes for å teste deteksjon på et enkelt bilde.
 
 #### results
+Inneholder vekter etter forskjellige treninger konfigurert med forskjellige versjoner av yolov4, forskjellige dataset og forskjellige oppløsninger. ```baseline_II```tilsvarer standard YOLOv4, ```yolov4_csp``` tilsvarer "cspized-yolov4" og ```yolov4_tiny``` tilsvarer en mindre versjon av yolov4. ```standard``` tilsvarer at det originale datasettet er brukt, ```negative``` indikerer original + negativer, ```blurred``` indikerer original + blurred og ```complete```indikerer originale + blurred + negative. Tallet på slutten indikerer hvilken oppløsning som er brukt.
 
 #### results_ikkevurdert
 
