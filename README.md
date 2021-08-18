@@ -41,11 +41,21 @@ Brukes for å teste deteksjon på et enkelt bilde.
 Inneholder vekter etter forskjellige treninger konfigurert med forskjellige versjoner av yolov4, forskjellige dataset og forskjellige oppløsninger. ```baseline_II```tilsvarer standard YOLOv4, ```yolov4_csp``` tilsvarer "cspized-yolov4" og ```yolov4_tiny``` tilsvarer en mindre versjon av yolov4. ```standard``` tilsvarer at det originale datasettet er brukt, ```negative``` indikerer original + negativer, ```blurred``` indikerer original + blurred og ```complete```indikerer originale + blurred + negative. Tallet på slutten indikerer hvilken oppløsning som er brukt.
 
 #### results_ikkevurdert
+Vekter som er trent ca dobbelt så lenge som vektene i ```results```. Det er her man finner de vektene som hadde best ytelse.
 
 #### map_calc
+Scripts som ble brukt for å beregne AP50, AP75, AP90 og mAP til masteren. Finnes nok mer elegante måter å gjøre dette på.
 
 #### darknet
+Mappen med all koden til selve YOLOv4 og rammeverket, kalt darknet. Videre følger en forklaring på de relevante mappene inne i darknet.
 
+### Mapper inne i darknet
+
+#### cfg
+Inneholder config filer som benyttes for å velge yolov4-versjon (csp, vanlig, tiny), angi antall treningsiterasjoner samt for å angi oppløsning.
+
+#### data
+Inneholder bildene som skal trenes på (images mappen), tekst filer med annoteringer (images mappen) og 
 
 
  
@@ -56,7 +66,8 @@ Inneholder vekter etter forskjellige treninger konfigurert med forskjellige vers
 ## Hvordan trene på nye data
 
 ## Andre ressurser
-Har i stor grad basert meg på det offisielle repoet til YOLOv4, som kan finnes på denne linken https://github.com/AlexeyAB/darknet.
+Jeg har i stor grad basert meg på det offisielle repoet til YOLOv4, som kan finnes på denne linken https://github.com/AlexeyAB/darknet. Det anbefales å lese gjennom hele readme fila for å få en forståelse av hvordan man setter opp, trener og kjører yolov4.
+
 
 
 
