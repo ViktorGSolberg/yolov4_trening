@@ -23,15 +23,19 @@
 * ```data_bbox_generator``` ble benyttet for å inspisere annoteringene til skihopperene, samt øke størrelsene på bounding boksene.
 
 ### darknet_opencv
-Den siste mappen som er relevant er darknet_opencv. Denne inneholder såpass mange filer at den får et eget delkapittel.
+Dette er den siste mappen som er relevant er darknet_opencv. Denne inneholder såpass mange filer at den får et eget delkapittel. 
 
 #### darknet_setup
+Bygger prosjektet, som beskrevet i det offisielle repoet til YOLOv4. Lenke til dette repoet er gitt under "andre ressurser" lenger nede.
 
 #### darknet_test_recordings
+Denne fila inneholder riktig kommando for å kjøre yolov4 på en videofil, desverre ble dette ikke støttet på Darth, antageligvis på grunn av måten OpenCV ble installert på.
 
 #### darknet_train 
+Flytter treningsdataer inn i riktige steder i ```darknet```mappen, lager de riktige tekstfilene i henhold til beskrivelsene i yolov4-repoet, og starter en runde med trening.
 
 #### detect
+Brukes for å teste deteksjon på et enkelt bilde.
 
 #### results
 
@@ -51,7 +55,7 @@ Den siste mappen som er relevant er darknet_opencv. Denne inneholder såpass man
 ## Hvordan trene på nye data
 
 ## Andre ressurser
-
+Har i stor grad basert meg på det offisielle repoet til YOLOv4, som kan finnes på denne linken https://github.com/AlexeyAB/darknet.
 
 
 
