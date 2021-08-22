@@ -76,9 +76,13 @@ For å trene yolov4 må man benytte følgende kommando: ```./darknet detector tr
 Dette spesifikke eksempelet angir ```data/obj.data``` til å si hvor mange klasser som skal læres, peke på tekstfil som har navn på bilde-filene som skal trenes på, samt peke på bilde-filene som skal valideres på. Den sier også hvor vektene skal lagres (backup). ```cfg/et-eller-annet-cfg``` angir konfigurasjonen til modellen. I config filen bestemmer man oppløsning, batch-inndeling, hvor lenge trening skal foregå, med mer. Anbefaler å lese rett fra repoet jeg har linket til for å få innsikt i dette. ```yolov4.conv.137``` angir noen vekter som må brukes hver gang. ```-dont_show``` brukes for å hindre spam i konsollen. ```-map```brukes for å si at modellen skal kalkulere map for hver tusende iterasjon. (Henviser igjen til repoet for mer info). ```| tee results.log```sier at all utskrift skal logges til result.log.
 
 ## Hvordan trene på nye data
+Her er det bare å kjøre samme fremgangsmåte som under "overordnede steg". :) Det er mulig å angi slik at vektene man får fra en tidligere trening kan brukes som startvektene for neste trening. Igjen, det offisielle repoet inneholder nødvendige kommandoer for dette.
 
 ## Andre ressurser
 Jeg har i stor grad basert meg på det offisielle repoet til YOLOv4, som kan finnes på denne linken https://github.com/AlexeyAB/darknet. Det anbefales å lese gjennom hele readme fila for å få en forståelse av hvordan man setter opp, trener og kjører yolov4.
+
+## Har jeg fått med alt?
+Tror jeg har fått med det meste nå, si gjerne ifra dersom noe er uklart!
 
 
 
