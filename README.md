@@ -55,9 +55,14 @@ Mappen med all koden til selve YOLOv4 og rammeverket, kalt darknet. Videre følg
 Inneholder config filer som benyttes for å velge yolov4-versjon (csp, vanlig, tiny), angi antall treningsiterasjoner samt for å angi oppløsning.
 
 #### data
-Inneholder bildene som skal trenes på (images mappen), tekst filer med annoteringer (images mappen) og 
+Inneholder følgende viktige filer:
+* ```ìmages mappen``` - Inneholder selve bildene som modellen skal trenes på og tekstfiler med annoteringer. 
+* ```obj.data``` - En tekst fil som angir hvor mange klasser av objekter som skal trenes på, filnavn på tekstfil som igjen inneholder filnavn på bilder som modellen skal trenes på og valideres mot samt hvor vektene skal lagres etter treningen (backup mappen).
+* ```obj.names```- Navnet på objektene som modellen skal trenes på (i vårt tilfelle skijumper).
+* ```train_blur.txt```, ```train_complete.txt```, ```train_negative.txt```, ```train_standard.txt```og ```validation.txt```, tekstfiler som angir hvilke data som modellen skal trenes på. Disse bestemmes i ```òbj.data```som beskrevet ovenfor. Standard vil si kun bildene som fulgte med prosjektet. Negative vil si standard + negative bilder.
 
-
+### Results.log
+Logger output fra forrige trening, dersom en ønsker dette
  
 ## Mapper og filer som er nødvendige for integrering i software
 
